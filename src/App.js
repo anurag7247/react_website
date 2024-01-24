@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import {Route, Routes } from 'react-router-dom';
+import Navbar from './Winter-internship-Apps/Navbar.js';
+import Home from './Winter-internship-Apps/Home.js';
+import WeatherApp from './Winter-internship-Apps/weather-app/WeatherApp.js';
+import NewsApp from './Winter-internship-Apps/news-app/NewsApp.js';
+import PageNotFound from './Winter-internship-Apps/news-app/Components/PageNotFound.jsx';
+import SearchNews from './Winter-internship-Apps/news-app/Components/SearchNews.jsx';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <>
+      <div>
+        <Navbar />
+      </div>
+      <Routes>
+      <Route path="/" element={<Home/>} />  
+      <Route path="weather-app" element={<WeatherApp/>}/>  
+      <Route path="news-app" element={<NewsApp/>}/>  
+      <Route path="/Search-news" element={<SearchNews/>}/>
+      <Route  path="/*" element={<PageNotFound/>}/>
+
+      </Routes>
+ </>
   );
-}
+};
 
 export default App;
