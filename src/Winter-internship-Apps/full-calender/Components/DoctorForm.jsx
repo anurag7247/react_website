@@ -1,4 +1,4 @@
-// DoctorForm.js
+
 import React, { useState } from 'react';
 
 const DoctorForm = ({ onDrSubmit }) => {

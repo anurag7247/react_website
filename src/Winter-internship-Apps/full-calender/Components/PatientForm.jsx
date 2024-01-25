@@ -1,4 +1,4 @@
-// PatientForm.js
+
 import React, { useState } from 'react';
 
 const PatientForm = ({ onPatientSubmit, drArray }) => {
