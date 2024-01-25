@@ -6,6 +6,8 @@ import WeatherApp from './Winter-internship-Apps/weather-app/WeatherApp.js';
 import NewsApp from './Winter-internship-Apps/news-app/NewsApp.js';
 import PageNotFound from './Winter-internship-Apps/news-app/Components/PageNotFound.jsx';
 import SearchNews from './Winter-internship-Apps/news-app/Components/SearchNews.jsx';
+import Fullcalendar from './Winter-internship-Apps/full-calender/Fullcalendar.js';
+
 const App = () => {
   return (
  <>
@@ -17,6 +19,7 @@ const App = () => {
       <Route path="weather-app" element={<WeatherApp/>}/>  
       <Route path="news-app" element={<NewsApp/>}/>  
       <Route path="/Search-news" element={<SearchNews/>}/>
+      <Route path="/full-calendar" element={<Fullcalendar/>}/>
       <Route  path="/*" element={<PageNotFound/>}/>
 
       </Routes>

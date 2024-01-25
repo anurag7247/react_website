@@ -38,6 +38,11 @@ const Navbar = () => {
                   News-App
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link fw-bold" to="/full-calendar">
+                  FullCalendar
+                </Link>
+              </li>
             </ul>
             <form className="d-flex" role="search">
               <input
